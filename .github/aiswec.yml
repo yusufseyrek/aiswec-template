@@ -1,0 +1,11 @@
+# How aiswec behaves in this repository. Every stage reads this file when it
+# starts; Companion edits it from the project's Settings page, and the next
+# run picks the change up. `maintainers` — who may ask, approve and instruct
+# aiswec — is written when the project is set up.
+detail: standard
+advance:
+  build: approval
+runtime:
+  setup: bun
+gates:
+  - bun test
